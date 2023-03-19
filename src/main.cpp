@@ -7,8 +7,6 @@
 #include "prompts/prompts.hpp"
 #include "colors/colors.hpp"
 
-using namespace std;
-
 int main() {
     char start_key, stop_key, exit_key;
     int button_int; 
@@ -21,22 +19,22 @@ int main() {
 
     colors.enable_vtp();
 
-    tie(start_key, stop_key, exit_key) = prompts(key);
-    tie(button_int, button_name) = key -> get_mouse("Button to be autoclicked (press any mouse button): ");
+    std::tie(start_key, stop_key, exit_key) = prompts(key);
+    std::tie(button_int, button_name) = key -> get_mouse("Button to be autoclicked (press any mouse button): ");
     delete key;
     
-    cout << "Delay between clicks (in seconds): ";
-    cin >> delay;
+    std::cout << "Delay between clicks (in seconds): ";
+    std::cin >> delay;
 
     delay *= 1000;
 
-    cout << "\n" << endl;
-    cout << "Autoclicker start key is: " << start_key << endl;
-    cout << "Autoclicker stop key is: " << stop_key << endl;
-    cout << "Program exit key is: " << exit_key << endl;
-    cout << "Mouse button to be autoclicked is: " << button_name << endl;
-    cout << "Delay between clicks is: " << delay/1000 << " seconds" << endl;
-    cout << "\n" << endl;
+    std::cout << "\n" << std::endl;
+    std::cout << "Autoclicker start key is: " << start_key << std::endl;
+    std::cout << "Autoclicker stop key is: " << stop_key << std::endl;
+    std::cout << "Program exit key is: " << exit_key << std::endl;
+    std::cout << "Mouse button to be autoclicked is: " << button_name << std::endl;
+    std::cout << "Delay between clicks is: " << delay/1000 << " seconds" << std::endl;
+    std::cout << "\n" << std::endl;
 
     clicker -> mouse_clicker(start_key, stop_key, exit_key, button_int, delay);
     delete clicker;

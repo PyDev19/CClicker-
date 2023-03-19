@@ -5,20 +5,18 @@
 
 #include "key.hpp"
 
-using namespace std;
-
 char Key::get_key(const char* prompt) {
-    cout << prompt;
+    std::cout << prompt;
 
     char user_input = _getch();
 
-    cout << char(toupper(user_input)) << endl;
+    std::cout << char(toupper(user_input)) << std::endl;
 
     return char(toupper(user_input));
 }
 
-tuple<int, const char*> Key::get_mouse(const char* prompt) {
-    cout << prompt;
+std::tuple<int, const char*> Key::get_mouse(const char* prompt) {
+    std::cout << prompt;
 
     int user_input;
     const char* button_name;
@@ -27,19 +25,19 @@ tuple<int, const char*> Key::get_mouse(const char* prompt) {
         if (GetAsyncKeyState(VK_LBUTTON)) {
             user_input = VK_LBUTTON;
             button_name = "Left Mouse Button";
-            cout << button_name << endl;
+            std::cout << button_name << std::endl;
             break;
         
         } else if (GetAsyncKeyState(VK_RBUTTON)) {
             user_input = VK_RBUTTON;
             button_name = "Right Mouse Button";
-            cout << button_name << endl;
+            std::cout << button_name << std::endl;
             break;
         
         } else if (GetAsyncKeyState(VK_MBUTTON)) {
             user_input = VK_MBUTTON;
             button_name = "Middle Mouse Button";
-            cout << button_name << endl;
+            std::cout << button_name << std::endl;
             break;
         }
     }

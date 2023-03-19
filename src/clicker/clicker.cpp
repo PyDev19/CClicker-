@@ -4,8 +4,6 @@
 
 #include "clicker.hpp"
 
-using namespace std;
-
 Clicker::Clicker() {
     started = false;
     exit = false;
@@ -24,13 +22,13 @@ void Clicker::mouse_clicker(char start_key, char stop_key, char exit_key, int bu
 
     while (true) {
         if (printed_1 != true) {
-            cout << "Autoclicker Running" << endl;
+            std::cout << "Autoclicker Running" << std::endl;
             printed_1 = true;
         }
 
         if (GetAsyncKeyState(start_key) & 0x8000 && started == false) {
             if (printed_2 != true) {
-                cout << "Autoclicker Started" << endl;
+                std::cout << "Autoclicker Started" << std::endl;
                 printed_2 = true;
             }
             printed_3 = false;
@@ -39,7 +37,7 @@ void Clicker::mouse_clicker(char start_key, char stop_key, char exit_key, int bu
             started = true;
 		} else if (GetAsyncKeyState(stop_key) & 0x8000 && started == true) {
             if (printed_3 != true) {
-                cout << "Autoclicker Stopped" << endl;
+                std::cout << "Autoclicker Stopped" << std::endl;
                 printed_3 = true;
             }
             printed_2 = false;
@@ -47,7 +45,7 @@ void Clicker::mouse_clicker(char start_key, char stop_key, char exit_key, int bu
             click = false;
             started = false;
 		} else if (GetAsyncKeyState(exit_key) & 0x8000) {
-            cout << "Exiting Program" << endl;
+            std::cout << "Exiting Program" << std::endl;
             click = false;
             break;
         }

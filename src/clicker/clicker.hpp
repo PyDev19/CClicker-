@@ -4,8 +4,6 @@
 #include <Windows.h>
 #include <tuple>
 
-using namespace std;
-
 class Clicker {
     private:
         bool started, exit, printed_1, printed_2, printed_3, click;

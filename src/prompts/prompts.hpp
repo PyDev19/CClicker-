@@ -4,8 +4,6 @@
 #include <tuple>
 #include "../key/key.hpp"
 
-using namespace std;
-
-tuple<char, char, char> prompts(Key* key);
+std::tuple<char, char, char> prompts(Key* key);
 
 #endif
