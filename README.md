@@ -1,6 +1,10 @@
 # CClicker++
 C++ version of my Python autoclicker app: [PyClickerX](https://github.com/PyDev19/PyClickerX)
 
+# Features:
+- Comes with all features of a regular autoclicker
+- No need for an installer (best part about using C++), you can download and use a portable exe from the releases tab
+
 ## Latest Changes:
 - Created this app and repository
 
