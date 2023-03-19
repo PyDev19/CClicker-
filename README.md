@@ -1,5 +1,5 @@
 # CClicker++
-C++ version of my Python autoclicker app: [PyClickX](https://github.com/PyDev19/PyClickerX)
+C++ version of my Python autoclicker app: [PyClickerX](https://github.com/PyDev19/PyClickerX)
 
 ## Latest Changes:
 - Created this app and repository
