@@ -23,4 +23,3 @@ Patent protection: The GNU GPLv3 includes provisions to help protect against sof
 - Distribution limitations: The GNU GPLv3 imposes some limitations on how software can be distributed. For example, it requires that anyone who distributes the software must also provide the source code, and must not add any additional restrictions on how the software can be used or distributed.
 
 For more information about this license please read the [`LICENSE.md`](https://github.com/PyDev19/CClicker-/blob/main/LICENSE.md) file.
-
