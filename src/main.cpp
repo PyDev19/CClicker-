@@ -16,7 +16,7 @@ int main() {
     float delay;
 
     Key* key = new Key;
-    Clicker clicker;
+    Clicker* clicker = new Clicker;
     Colors colors;
 
     colors.enable_vtp();
@@ -38,7 +38,8 @@ int main() {
     cout << "Delay between clicks is: " << delay/1000 << " seconds" << endl;
     cout << "\n" << endl;
 
-    clicker.mouse_clicker(start_key, stop_key, exit_key, button_int, delay);
+    clicker -> mouse_clicker(start_key, stop_key, exit_key, button_int, delay);
+    delete clicker;
 
     Sleep(1000);
 
