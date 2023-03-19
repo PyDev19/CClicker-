@@ -23,9 +23,7 @@ int main() {
     colors.enable_vtp();
 
     keys = prompts(key);
-
     button = key -> get_mouse("Button to be autoclicked (press any mouse button): ");
-
     delete(key);
     
     cout << "Delay between clicks (in seconds): ";
@@ -44,8 +42,6 @@ int main() {
     cout << "\n" << endl;
 
     clicker.mouse_clicker(get<0>(keys), get<1>(keys), get<2>(keys), get<0>(button), delay);
-
-    delete(clicker);
 
     Sleep(1000);
 
