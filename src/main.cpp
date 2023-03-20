@@ -15,25 +15,25 @@ int main() {
 
     Key* key = new Key;
     Clicker* clicker = new Clicker;
-    Colors colors;
+    Colors* colors = new  Colors;
 
-    colors.enable_vtp();
+    colors->enable_vtp();
 
     std::tie(start_key, stop_key, exit_key) = prompts(key);
     std::tie(button_int, button_name) = key -> get_mouse("Button to be autoclicked (press any mouse button): ");
     delete key;
     
-    std::cout << "Delay between clicks (in seconds): ";
-    std::cin >> delay;
+    delay = colors->color_input_print("Delay between clicks (in seconds): ", colors->PREFERRED_PROMPT_COLOR, delay, colors->PREFERRED_INPUT_COLOR);
 
     delay *= 1000;
 
     std::cout << "\n" << std::endl;
-    std::cout << "Autoclicker start key is: " << start_key << std::endl;
-    std::cout << "Autoclicker stop key is: " << stop_key << std::endl;
-    std::cout << "Program exit key is: " << exit_key << std::endl;
-    std::cout << "Mouse button to be autoclicked is: " << button_name << std::endl;
-    std::cout << "Delay between clicks is: " << delay/1000 << " seconds" << std::endl;
+    colors->color_print("Autoclicker start key is: ", colors->PREFERRED_PROCESS_STARTING_COLOR, start_key);
+    colors->color_print("Autoclicker stop key is: ", colors->PREFERRED_PROCESS_STARTING_COLOR, stop_key);
+    colors->color_print("Autoclicker exit key is: ", colors->PREFERRED_PROCESS_STARTING_COLOR, exit_key);
+    colors->color_print("Mouse button to be autoclicked is: ", colors->PREFERRED_PROCESS_STARTING_COLOR, button_name);
+    colors->color_print("Delay between mouse clicks is: ", colors->PREFERRED_PROCESS_STARTING_COLOR, delay/1000);
+    delete colors;
     std::cout << "\n" << std::endl;
 
     clicker -> mouse_clicker(start_key, stop_key, exit_key, button_int, delay);
