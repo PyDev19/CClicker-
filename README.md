@@ -6,9 +6,8 @@ C++ version of my Python autoclicker app: [PyClickerX](https://github.com/PyDev1
 - No need for an installer (best part about using C++), you can download and use a portable exe from the releases tab
 
 ## Latest Changes:
-- Stopped using `using namespace std` in the code, now using `std::`.
-- Created a separate folder for each `.cpp` and `.hpp` with the same name.
-- Changes `Key` and `Clicker` class initialization to be a pointer so they can be deleted after use to avoid memory leaks.
+- Added color class to give the print messages color
+- Implemented switch case to clicker class to make things more efficient
 
 ## Supported Platforms:
 - Windows
