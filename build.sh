@@ -9,24 +9,24 @@ BUILD_DIR=build
 COMPILED_DIR=$BUILD_DIR/compiled_files
 APP_DIR=$BUILD_DIR/app
 
+# Compile the cpp files in colors folder
+echo 'Compiling c++ files in ' $COLORS_DIR ' directory...'
+g++ -I$COLORS_DIR -c $COLORS_DIR/colors.cpp -o $COMPILED_DIR/colors.o
+echo 'Done'
+
 # Compile the cpp files in key folder
 echo 'Compiling c++ files in ' $KEY_DIR ' directory...'
-g++ -I$KEY_DIR -c $KEY_DIR/key.cpp -o $COMPILED_DIR/key.o
+g++ -I$KEY_DIR -I$COLORS_DIR -c $KEY_DIR/key.cpp -o $COMPILED_DIR/key.o
 echo 'Done'
 
 # Compile the cpp files in clicker folder
 echo 'Compiling c++ files in ' $CLICKER_DIR ' directory...'
-g++ -I$CLICKER_DIR -c $CLICKER_DIR/clicker.cpp -o $COMPILED_DIR/clicker.o
+g++ -I$CLICKER_DIR -I$COLORS_DIR -c $CLICKER_DIR/clicker.cpp -o $COMPILED_DIR/clicker.o
 echo 'Done'
 
 # Compile the cpp files in prompts folder
 echo 'Compiling c++ files in ' $PROMPTS_DIR ' directory...'
 g++ -I$KEY_DIR -I$PROMPTS_DIR -c $PROMPTS_DIR/prompts.cpp -o $COMPILED_DIR/prompts.o
-echo 'Done'
-
-# Compile the cpp files in colors folder
-echo 'Compiling c++ files in ' $COLORS_DIR ' directory...'
-g++ -I$COLORS_DIR -c $COLORS_DIR/colors.cpp -o $COMPILED_DIR/colors.o
 echo 'Done'
 
 # Compile the cpp files in src folder
