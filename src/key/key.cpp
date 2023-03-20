@@ -4,19 +4,26 @@
 #include <tuple>
 
 #include "key.hpp"
+#include "../colors/colors.hpp"
 
 char Key::get_key(const char* prompt) {
-    std::cout << prompt;
+    Colors* color = new Colors;
+    
+    std::cout << color->PREFERRED_PROMPT_COLOR << prompt;
 
     char user_input = _getch();
 
-    std::cout << char(toupper(user_input)) << std::endl;
+    std::cout << color->PREFERRED_INPUT_COLOR << char(toupper(user_input)) << color->RESET << std::endl;
+
+    delete color;
 
     return char(toupper(user_input));
 }
 
 std::tuple<int, const char*> Key::get_mouse(const char* prompt) {
-    std::cout << prompt;
+    Colors* color = new Colors;
+
+    std::cout << color->PREFERRED_PROMPT_COLOR << prompt;
 
     int user_input;
     const char* button_name;
@@ -25,19 +32,22 @@ std::tuple<int, const char*> Key::get_mouse(const char* prompt) {
         if (GetAsyncKeyState(VK_LBUTTON)) {
             user_input = VK_LBUTTON;
             button_name = "Left Mouse Button";
-            std::cout << button_name << std::endl;
+            std::cout << color->PREFERRED_INPUT_COLOR << button_name << color->RESET << std::endl;
+            delete color;
             break;
         
         } else if (GetAsyncKeyState(VK_RBUTTON)) {
             user_input = VK_RBUTTON;
             button_name = "Right Mouse Button";
-            std::cout << button_name << std::endl;
+            std::cout << color->PREFERRED_INPUT_COLOR << button_name << color->RESET << std::endl;
+            delete color;
             break;
         
         } else if (GetAsyncKeyState(VK_MBUTTON)) {
             user_input = VK_MBUTTON;
             button_name = "Middle Mouse Button";
-            std::cout << button_name << std::endl;
+            std::cout << color->PREFERRED_INPUT_COLOR << button_name << color->RESET << std::endl;
+            delete color;
             break;
         }
     }
