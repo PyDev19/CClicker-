@@ -11,7 +11,7 @@ int main() {
     char start_key, stop_key, exit_key;
     int button_int; 
     const char* button_name;
-    float delay;
+    float delay = 0;
 
     Key* key = new Key;
     Clicker* clicker = new Clicker;

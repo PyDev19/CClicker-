@@ -8,10 +8,11 @@
 
 char Key::get_key(const char* prompt) {
     Colors* color = new Colors;
+    char user_input = '\0';
     
     std::cout << color->PREFERRED_PROMPT_COLOR << prompt;
 
-    char user_input = _getch();
+    user_input = _getch();
 
     std::cout << color->PREFERRED_INPUT_COLOR << char(toupper(user_input)) << color->RESET << std::endl;
 
