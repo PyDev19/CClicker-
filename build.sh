@@ -6,7 +6,7 @@ PROMPTS_DIR=$SOURCE_DIR/prompts
 COLORS_DIR=$SOURCE_DIR/colors
 
 BUILD_DIR=build
-COMPILED_DIR=$BUILD_DIR/compiled_files
+COMPILED_DIR=$BUILD_DIR/obj
 APP_DIR=$BUILD_DIR/app
 
 # Compile the cpp files in colors folder
