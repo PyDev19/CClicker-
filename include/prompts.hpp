@@ -2,7 +2,7 @@
 #define PROMPTS_HPP
 
 #include <tuple>
-#include "../key/key.hpp"
+#include "key.hpp"
 
 std::tuple<char, char, char> prompts(Key* key);
 

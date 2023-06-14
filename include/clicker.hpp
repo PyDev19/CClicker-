@@ -1,7 +1,7 @@
 #ifndef CLICKER_HPP
 #define CLICKER_HPP
 
-#include <Windows.h>
+#include <windows.h>
 #include <tuple>
 
 class Clicker {
