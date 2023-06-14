@@ -1,4 +1,4 @@
-.vscode/*
 build/*
-*.rc
+.vscode/settings.json
+libs/
 *.res
