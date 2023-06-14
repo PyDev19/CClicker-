@@ -1,11 +1,11 @@
 #include <iostream>
 #include <string>
-#include <Windows.h>
+#include <windows.h>
 
-#include "key/key.hpp"
-#include "clicker/clicker.hpp"
-#include "prompts/prompts.hpp"
-#include "colors/colors.hpp"
+#include "key.hpp"
+#include "clicker.hpp"
+#include "prompts.hpp"
+#include "colors.hpp"
 
 int main() {
     char start_key, stop_key, exit_key;

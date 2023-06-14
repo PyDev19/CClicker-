@@ -1,7 +1,7 @@
 #include <tuple>
 
 #include "prompts.hpp"
-#include "../key/key.hpp"
+#include "key.hpp"
 
 std::tuple<char, char, char> prompts(Key* key) {
     char start_key, stop_key, exit_key = '\0';

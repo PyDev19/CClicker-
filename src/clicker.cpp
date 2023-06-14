@@ -1,9 +1,9 @@
 #include <iostream>
-#include <Windows.h>
+#include <windows.h>
 #include <tuple>
 
 #include "clicker.hpp"
-#include "../colors/colors.hpp"
+#include "colors.hpp"
 
 Clicker::Clicker() {
     started = false;

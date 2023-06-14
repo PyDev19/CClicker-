@@ -1,10 +1,10 @@
 #include <iostream>
 #include <conio.h>
-#include <Windows.h>
+#include <windows.h>
 #include <tuple>
 
 #include "key.hpp"
-#include "../colors/colors.hpp"
+#include "colors.hpp"
 
 char Key::get_key(const char* prompt) {
     Colors* color = new Colors;
