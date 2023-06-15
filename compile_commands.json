@@ -1,32 +1,32 @@
 [
-  {
-    "directory": "/home/pydev19/Documents/Projects/C++/CClicker-",
-    "command": "/usr/lib64/ccache/x86_64-w64-mingw32-g++  @CMakeFiles/CClicker++.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles/CClicker++.dir/src/main.cpp.obj -c /home/pydev19/Documents/Projects/C++/CClicker-/src/main.cpp",
-    "file": "/home/pydev19/Documents/Projects/C++/CClicker-/src/main.cpp",
-    "output": "CMakeFiles/CClicker++.dir/src/main.cpp.obj"
-  },
-  {
-    "directory": "/home/pydev19/Documents/Projects/C++/CClicker-",
-    "command": "/usr/lib64/ccache/x86_64-w64-mingw32-g++  @CMakeFiles/CClicker++.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles/CClicker++.dir/src/clicker.cpp.obj -c /home/pydev19/Documents/Projects/C++/CClicker-/src/clicker.cpp",
-    "file": "/home/pydev19/Documents/Projects/C++/CClicker-/src/clicker.cpp",
-    "output": "CMakeFiles/CClicker++.dir/src/clicker.cpp.obj"
-  },
-  {
-    "directory": "/home/pydev19/Documents/Projects/C++/CClicker-",
-    "command": "/usr/lib64/ccache/x86_64-w64-mingw32-g++  @CMakeFiles/CClicker++.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles/CClicker++.dir/src/colors.cpp.obj -c /home/pydev19/Documents/Projects/C++/CClicker-/src/colors.cpp",
-    "file": "/home/pydev19/Documents/Projects/C++/CClicker-/src/colors.cpp",
-    "output": "CMakeFiles/CClicker++.dir/src/colors.cpp.obj"
-  },
-  {
-    "directory": "/home/pydev19/Documents/Projects/C++/CClicker-",
-    "command": "/usr/lib64/ccache/x86_64-w64-mingw32-g++  @CMakeFiles/CClicker++.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles/CClicker++.dir/src/key.cpp.obj -c /home/pydev19/Documents/Projects/C++/CClicker-/src/key.cpp",
-    "file": "/home/pydev19/Documents/Projects/C++/CClicker-/src/key.cpp",
-    "output": "CMakeFiles/CClicker++.dir/src/key.cpp.obj"
-  },
-  {
-    "directory": "/home/pydev19/Documents/Projects/C++/CClicker-",
-    "command": "/usr/lib64/ccache/x86_64-w64-mingw32-g++  @CMakeFiles/CClicker++.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles/CClicker++.dir/src/prompts.cpp.obj -c /home/pydev19/Documents/Projects/C++/CClicker-/src/prompts.cpp",
-    "file": "/home/pydev19/Documents/Projects/C++/CClicker-/src/prompts.cpp",
-    "output": "CMakeFiles/CClicker++.dir/src/prompts.cpp.obj"
-  }
+{
+  "directory": "/home/pydev19/Documents/Projects/C++/CClicker-",
+  "command": "/usr/lib64/ccache/x86_64-w64-mingw32-g++  @CMakeFiles/CClicker++.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles/CClicker++.dir/src/main.cpp.obj -c /home/pydev19/Documents/Projects/C++/CClicker-/src/main.cpp",
+  "file": "/home/pydev19/Documents/Projects/C++/CClicker-/src/main.cpp",
+  "output": "CMakeFiles/CClicker++.dir/src/main.cpp.obj"
+},
+{
+  "directory": "/home/pydev19/Documents/Projects/C++/CClicker-",
+  "command": "/usr/lib64/ccache/x86_64-w64-mingw32-g++  @CMakeFiles/CClicker++.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles/CClicker++.dir/src/clicker.cpp.obj -c /home/pydev19/Documents/Projects/C++/CClicker-/src/clicker.cpp",
+  "file": "/home/pydev19/Documents/Projects/C++/CClicker-/src/clicker.cpp",
+  "output": "CMakeFiles/CClicker++.dir/src/clicker.cpp.obj"
+},
+{
+  "directory": "/home/pydev19/Documents/Projects/C++/CClicker-",
+  "command": "/usr/lib64/ccache/x86_64-w64-mingw32-g++  @CMakeFiles/CClicker++.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles/CClicker++.dir/src/colors.cpp.obj -c /home/pydev19/Documents/Projects/C++/CClicker-/src/colors.cpp",
+  "file": "/home/pydev19/Documents/Projects/C++/CClicker-/src/colors.cpp",
+  "output": "CMakeFiles/CClicker++.dir/src/colors.cpp.obj"
+},
+{
+  "directory": "/home/pydev19/Documents/Projects/C++/CClicker-",
+  "command": "/usr/lib64/ccache/x86_64-w64-mingw32-g++  @CMakeFiles/CClicker++.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles/CClicker++.dir/src/key.cpp.obj -c /home/pydev19/Documents/Projects/C++/CClicker-/src/key.cpp",
+  "file": "/home/pydev19/Documents/Projects/C++/CClicker-/src/key.cpp",
+  "output": "CMakeFiles/CClicker++.dir/src/key.cpp.obj"
+},
+{
+  "directory": "/home/pydev19/Documents/Projects/C++/CClicker-",
+  "command": "/usr/lib64/ccache/x86_64-w64-mingw32-g++  @CMakeFiles/CClicker++.dir/includes_CXX.rsp -std=gnu++17 -o CMakeFiles/CClicker++.dir/src/prompts.cpp.obj -c /home/pydev19/Documents/Projects/C++/CClicker-/src/prompts.cpp",
+  "file": "/home/pydev19/Documents/Projects/C++/CClicker-/src/prompts.cpp",
+  "output": "CMakeFiles/CClicker++.dir/src/prompts.cpp.obj"
+}
 ]
