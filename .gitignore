@@ -1,4 +1,9 @@
-build/*
+build/
 .vscode/settings.json
 libs/
+CMakeFiles/
+cmake_install.cmake
+CMakeCache.txt
+Makefile
 *.res
+*.exe
