@@ -6,8 +6,8 @@
 #include "colors.hpp"
 
 Clicker::Clicker() {
-    started = false;
-    exit = false;
+	started = false;
+	exit = false;
 
     printed_1 = false;
     printed_2 = false;
