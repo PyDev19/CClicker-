@@ -3,7 +3,6 @@ C++ version of my Python autoclicker app: [PyClickerX](https://github.com/PyDev1
 
 # Features:
 - Comes with all features of a regular autoclicker
-- No need for an installer (best part about using C++), you can download and use a portable exe from the releases tab
 
 ## Latest Changes:
 - Added color class to give the print messages color
@@ -24,3 +23,15 @@ Patent protection: The GNU GPLv3 includes provisions to help protect against sof
 - Distribution limitations: The GNU GPLv3 imposes some limitations on how software can be distributed. For example, it requires that anyone who distributes the software must also provide the source code, and must not add any additional restrictions on how the software can be used or distributed.
 
 For more information about this license please read the [`LICENSE.md`](https://github.com/PyDev19/CClicker-/blob/main/LICENSE.md) file.
+
+## Contributing
+If you want to contribute:
+- Fork the repository
+- Clone it on your machine
+- Make the changes you want
+- Create a pull request
+
+If you are creating your changes make sure to create a `libs` folder and put the following dlls in it:
+- libgcc_s_seh-1.dll
+- libstdc++-6.dll
+- libwinpthread-1.dll
