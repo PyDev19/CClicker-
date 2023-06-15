@@ -2,6 +2,7 @@ build/
 .vscode/settings.json
 libs/
 CMakeFiles/
+.cache/
 cmake_install.cmake
 CMakeCache.txt
 Makefile
